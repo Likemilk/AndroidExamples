@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cho32_Resource</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <!-- 문자열같은것은 여기다가 모아놓고 사용하는방법이 좋다. 유지보수및 관리가 편하기때문이다.
+    더군다나 문자 색이나 배경관리나 등등.. 그리고 언어별 지원을 하기위해서는 여기다가 하는것이 좋다.
+      -->
+
+    <string name="str1">문자열1</string>
+    <string name="str2">문자열2</string>
+    <string name="str3" formatted="false">이름은 [%s] 이고 나이는 [%d] 입니다</string><!-- 출력형식. formatted 는 검사하지말아라~ 출력서식이 2개이상이있을때 사용하는 속성-->
+    <!--서식상의 오류가아니라 IDE 개발툴에 대한 오류이다. 여기서는 이름하고 나이값을 가지고 바인딩을 할것이다.html -->
+     <!--
+     < : &lt;
+     > : &gt;
+     " : &quot;
+ -->
+    <!--
+        <b>bold</b><i>italic</i><font color="red">red</font>
+    -->
+    <string name="str4">&lt;b&gt;bold&lt;/b&gt;&lt;i&gt;italic&lt;/i&gt;&lt;font color=&quot;red&quot;&gt;red&lt;/font&gt;</string>
+</resources>
+    <!--
+    &it;  b &bt   &npsb 이거 사용하는것처럼 xml 문자열에서는 태그를 직접사용하지말고 & 기호를 이용해서작성을 해야한다.
+     -->

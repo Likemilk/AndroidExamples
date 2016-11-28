@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<!--
+    <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="android.support.v4.app.ListFragment"
+        android:id="@+id/fragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+     클래스가 정의되어있는것이 아니기때문에 코드를 전부다 액티비티에다가 다 만들어주어야하기때문에 지운다. -->
+
+ <!--   <fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.likemilk.cho13_fragmentlist.TestFragment"
+        android:id="@+id/fragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+name에서 패키지를 부르나 태그에서 패키지를 기술하나 내용은 어짜피 똑 같 다 .
+아래것과 내용은 같다.
+-->
+<fragment
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:name="com.likemilk.cho13_fragmentlist.TestFragment"
+        android:id="@+id/fragment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--클래스이름은 네임에다가 넣어도되고 태그에도 넣어도 된다.
+    그러나~!!!!!!!!!!!!!!!!! 프래그먼트는 안되!!!
+    프래그먼트는 네임은 네임으로 넣어야한다!!!!!!!!!!!!!!!!!!!!!
+
+    그리고 Fragment 인대 fragment 는 Fragment 로 만든 객체! 이기때문이다.
+    -->
+
+</RelativeLayout>

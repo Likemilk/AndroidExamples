@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기본 토스트"
+            android:id="@+id/button"
+            android:onClick="basic_toast" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Custom 토스트"
+            android:id="@+id/button2"
+            android:singleLine="true"
+            android:onClick="custom_toast" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="기본 다이얼로그"
+            android:id="@+id/button3"
+            android:onClick="basic_dialog" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="날짜선택&amp;시간선택"
+            android:id="@+id/button4"
+            android:onClick="date_dialog" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시간선택"
+            android:id="@+id/button5"
+            android:onClick="time_dialog" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="프로그래스 다이얼로그"
+            android:id="@+id/button6"
+            android:onClick="progress_show" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

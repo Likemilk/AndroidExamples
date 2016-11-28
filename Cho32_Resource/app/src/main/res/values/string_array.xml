@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- values->values Resource  xml -->
+<resources>
+    <string-array name="str_arr">
+        <item>항목1</item>
+        <item>항목2</item>
+        <item>항목3</item>
+        <item>항목4</item>
+    </string-array>
+
+
+
+
+</resources>

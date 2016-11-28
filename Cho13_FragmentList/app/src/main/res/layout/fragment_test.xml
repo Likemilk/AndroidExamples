@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.likemilk.cho13_fragmentlist.TestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/list"
+        android:layout_gravity="left|top" />
+    <!--기존에는 wrap_content 로 되어있기떄문에 문자만 누르면 문자만 클릭할수있다.
+    그렇기때문에 match_parent로 바꿔주는것이좋다.
+    os에서 지정한 아이디값을 지정한다 list !
+
+    -->
+</FrameLayout>

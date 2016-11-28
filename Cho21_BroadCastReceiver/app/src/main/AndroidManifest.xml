@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.likemilk.cho21_broadcastreceiver" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+
+                <!--이 이름이 안드로이드 os 가 알고있는 이름이다. -->
+            </intent-filter>
+
+        </receiver>
+        <!-- 이상태에서는 같은 어플만 사용사용가능함.
+          <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+
+         </receiver>
+    -->
+
+
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <!--어플 외부의 요소를 사용할때는 이런걸 넣어야한다. 마켓에 서 다운받을때 이런 권한 알림메세지가 뜬다
+    그리고 또한 이런걸 안하고 코드를 사용한다면 안드로이드 OS 에서 어플을 튕겨낸다 즉 달빅 종료 -->
+
+</manifest>

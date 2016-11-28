@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+        android:drawable="@drawable/b"/><!--이미지를 눌렀을대-->
+    <item android:drawable="@drawable/c"/><!--기본 아무것도 안할때~-->
+</selector>

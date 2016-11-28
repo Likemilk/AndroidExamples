@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="그룹1">
+        <EditTextPreference
+            android:title="문자열 입력"
+            android:key="data1"
+            android:icon="@drawable/ic_launcher"
+            android:dialogTitle="문자열 입력"
+            android:dialogMessage="문자열 입력해주세요"
+            android:positiveButtonText="확인버튼"
+            android:negativeButtonText="취소"/>
+        <CheckBoxPreference
+            android:title="체크박스"
+            android:key="data2"
+            android:icon="@drawable/ic_launcher"
+            android:summaryOn="체크되어 있습니다"
+            android:summaryOff="체크가 해제 되었습니다"/>
+        <!--
+        데이터에 들어간 값을 잘 key 에 들어간 값을 잘 기억한다.
+
+        -->
+        <SwitchPreference
+            android:title="스위치"
+            android:key="data3"
+            android:icon="@drawable/ic_launcher"
+            android:switchTextOn="켜기"
+            android:switchTextOff="끄기"
+            android:summaryOn="ON"
+            android:summaryOff="OFF"/>
+    </PreferenceCategory>
+    <!-- 채크박스를 잘 안쓴다 오히려 스위치를 많이쓴다 ..그이유는 안이뻐서.. preference 의 스위치는 3.0 이상부터 사용가능함.
+        리스트를 띄워서 하나만 고르게할수도 있고
+        채크박스는 on / off 기능을 위해 사용한다.  그렇게 채크박스르 사용하게되면 리스트를 띄어서 스위치로 사용하는게 더 이쁘..다
+        -->
+    <PreferenceCategory android:title="그룹2">
+        <ListPreference
+            android:title="일반 리스트"
+            android:key="data4"
+            android:icon="@drawable/ic_launcher"
+            android:dialogTitle="일반 리스트"
+            android:positiveButtonText="확인"
+            android:negativeButtonText="취소"
+            android:entryValues="@array/list_value"
+            android:entries="@array/list_title"/>
+        <MultiSelectListPreference
+            android:title="멀티 리스트"
+            android:key="data5"
+            android:icon="@drawable/ic_launcher"
+            android:dialogTitle="멀티 리스트"
+            android:positiveButtonText="확인"
+            android:negativeButtonText="취소"
+            android:entryValues="@array/list_value"
+            android:entries="@array/list_title"/>
+        <RingtonePreference
+            android:title="벨소리"
+            android:key="data6"
+            android:icon="@drawable/ic_launcher"
+            android:ringtoneType="all"/>
+        <!--
+            엔트리벨류스에 있는 값을 실제 값이고
+            엔트리스는 그냥 보이기만해준다.
+            벨소리같ㅇ... 그거는 벨소리만 보여준다. 안드로이드 OS 에 내장되어있는 벨소리만 가져오는녀석이다.
+
+
+
+            -->
+    </PreferenceCategory>
+</PreferenceScreen>

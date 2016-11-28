@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- <selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+</selector>-->
+
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+    android:src="@drawable/p"
+    android:tileMode="repeat"/>
+    <!--비트맵은 이미지를 만드는 태그이다. 기본적으로 이미지를 넣으면 이미지를 확대해서 보여주게되는대
+    에초에 원본이 작은것을 준비해서 타일링을 하면된다.
+
+    -->
